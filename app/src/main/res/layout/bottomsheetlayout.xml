@@ -192,11 +192,11 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/cardView_2"
                     app:layout_constraintStart_toEndOf="@+id/cardView_1"
-                    app:layout_constraintTop_toBottomOf="@+id/textView"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_incremento"
                     app:srcCompat="@drawable/wholesale64" />
 
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/textView_incremento"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_baseline_keyboard_double_arrow_up_24"
