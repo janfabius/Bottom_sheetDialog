@@ -44,11 +44,7 @@ public class MainActivity extends AppCompatActivity {
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.bottomsheetlayout);
 
-        LinearLayout editLayout = dialog.findViewById(R.id.layoutEdit);
-        LinearLayout shareLayout = dialog.findViewById(R.id.layoutShare);
-        LinearLayout uploadLayout = dialog.findViewById(R.id.layoutUpload);
-        LinearLayout printLayout = dialog.findViewById(R.id.layoutPrint);
-        Button button = dialog.findViewById(R.id.button_1);
+
         ImageView image_close = dialog.findViewById(R.id.sh_close);
 
 
@@ -63,56 +59,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-               // dialog.dismiss();
-                Toast.makeText(MainActivity.this,"ciao button",Toast.LENGTH_SHORT).show();
-
-            }
-        });
 
 
-        editLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                dialog.dismiss();
-                Toast.makeText(MainActivity.this,"Edit is Clicked",Toast.LENGTH_SHORT).show();
-
-            }
-        });
-
-        shareLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                dialog.dismiss();
-                Toast.makeText(MainActivity.this,"Share is Clicked",Toast.LENGTH_SHORT).show();
-
-            }
-        });
-
-        uploadLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                dialog.dismiss();
-                Toast.makeText(MainActivity.this,"Upload is Clicked",Toast.LENGTH_SHORT).show();
-
-            }
-        });
-
-        printLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                dialog.dismiss();
-                Toast.makeText(MainActivity.this,"Print is Clicked",Toast.LENGTH_SHORT).show();
-
-            }
-        });
 
         dialog.show();
         dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT);
