@@ -98,7 +98,7 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+                    app:srcCompat="@drawable/ic_baseline_close_24" />
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardView_1"
@@ -193,8 +193,20 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/cardView_2"
                     app:layout_constraintStart_toEndOf="@+id/cardView_1"
-                    app:layout_constraintTop_toBottomOf="@+id/choosetxt"
+                    app:layout_constraintTop_toBottomOf="@+id/textView"
                     app:srcCompat="@drawable/wholesale64" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_keyboard_double_arrow_up_24"
+                    android:gravity="center_vertical"
+                    android:text="12,64 %"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toStartOf="@+id/cardView_2"
+                    app:layout_constraintStart_toEndOf="@+id/cardView_1"
+                    app:layout_constraintTop_toTopOf="@+id/cardView_1" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
