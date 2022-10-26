@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
         final Dialog dialog = new Dialog(this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        dialog.setContentView(R.layout.bottomsheetlayout);
+        dialog.setContentView(R.layout.bottomsheetlayout_art_legati);
 
         ImageView image_close = dialog.findViewById(R.id.sh_close);
 
@@ -68,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         dialog.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation;
         dialog.getWindow().setGravity(Gravity.BOTTOM);
-
     }
 
     private void showDialog_promo() {
