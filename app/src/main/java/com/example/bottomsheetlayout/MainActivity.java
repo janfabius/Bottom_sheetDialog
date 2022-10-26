@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Dialog;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -13,6 +14,7 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -46,6 +48,31 @@ public class MainActivity extends AppCompatActivity {
         LinearLayout shareLayout = dialog.findViewById(R.id.layoutShare);
         LinearLayout uploadLayout = dialog.findViewById(R.id.layoutUpload);
         LinearLayout printLayout = dialog.findViewById(R.id.layoutPrint);
+        Button button = dialog.findViewById(R.id.button_1);
+        ImageView image_close = dialog.findViewById(R.id.sh_close);
+
+
+        image_close.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                dialog.dismiss();
+                Toast.makeText(MainActivity.this,"chiudo",Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+               // dialog.dismiss();
+                Toast.makeText(MainActivity.this,"ciao button",Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
 
         editLayout.setOnClickListener(new View.OnClickListener() {
             @Override
